@@ -934,7 +934,7 @@ on init
 	
 		
 	{Control Group "Mapping"}
-		declare const $NUM_FACTORY_PRESETS := 11
+		declare const $NUM_FACTORY_PRESETS := 12
 		declare const $MAX_NUM_USER_PRESETS := 100
 	
 		declare %FACTORY_MAPPING_DATA[$NUM_FACTORY_PRESETS * 128] := (-1)
@@ -2322,7 +2322,112 @@ on init
 		%FACTORY_MAPPING_DATA[$count_1 * 128 + 104] := 37
 		%FACTORY_MAPPING_DATA[$count_1 * 128 + 105] := 45
 		%FACTORY_MAPPING_DATA[$count_1 * 128 + 106] := 38
+
+		{SKIN ON SKIN Mapping}
+		$count_1 := 11
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 14] := 113	{OCTOBAN 1-8}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 15] := 112
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 16] := 111
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 17] := 110
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 18] := 109
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 19] := 108
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 20] := 107
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 21] := 106
 		
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 22] := 74	{CHOKE 1-5}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 23] := 82
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 24] := 78
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 25] := 86
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 26] := 90
+		
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 27] := 114	{TIMBALE LOW 1-3, HI 1-3}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 28] := 115
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 29] := 116
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 30] := 117
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 31] := 118
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 32] := 119
+		
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 33] := 100	{CLAP SOLO}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 34] := 101	{CLAP MULTI}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 35] := 99	{STICK HIT}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 36] := 0
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 37] := 11
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 38] := 16	{SNARE SKIN-ON-SKIN}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 39] := 10
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 40] := 7
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 41] := 62	{TOMs SKIN-ON-SKIN}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 42] := 22
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 43] := 55
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 44] := 28
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 45] := 48
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 46] := 30
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 47] := 41
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 48] := 72
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 49] := 71
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 50] := 73
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 51] := 80
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 52] := 79
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 53] := 81
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 54] := 76
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 55] := 75
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 56] := 77
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 57] := 83
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 58] := 84
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 59] := 87
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 60] := 2
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 61] := 15
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 62] := 12
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 63] := 13
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 64] := 14
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 65] := 60
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 66] := 19
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 67] := 53
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 68] := 25
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 69] := 46
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 70] := 29
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 71] := 39
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 72] := 61
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 73] := 54
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 74] := 47
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 75] := 40
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 76] := 31
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 77] := 32
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 78] := 33
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 79] := 34
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 80] := 35
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 81] := 5
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 82] := 1
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 83] := 6
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 84] := 8
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 85] := 20
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 86] := 9
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 87] := 21
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 88] := 58
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 89] := 59
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 90] := 23
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 91] := 51
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 92] := 24
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 93] := 52
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 94] := 26
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 95] := 44
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 96] := 45
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 97] := 27
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 98] := 37
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 100] := 38
+		
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 101] := 4
+		
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 102] := 57
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 103] := 50
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 104] := 43
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 105] := 36
+
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 106] := 102	{COWBELL}
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 107] := 103
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 108] := 104
+		%FACTORY_MAPPING_DATA[$count_1 * 128 + 109] := 105
+
+
 		declare !ARTICULATION_NAMES[126]
 		{Kick}
 		!ARTICULATION_NAMES[0] := "DAMPENED"
@@ -2848,7 +2953,8 @@ on init
 		add_menu_item($current_mapping_preset, "iMap", 8)
 		add_menu_item($current_mapping_preset, "Addictive Drums", 9)
 		add_menu_item($current_mapping_preset, "LEGACY", 10)
-		add_menu_item($current_mapping_preset, "---------", 11)
+		add_menu_item($current_mapping_preset, "Skin on Skin", 11)
+		add_menu_item($current_mapping_preset, "---------", 12)
 		
 		$count_1 := $NUM_FACTORY_PRESETS + 1
 		while ($count_1 < $NUM_FACTORY_PRESETS + $MAX_NUM_USER_PRESETS + 1)
@@ -2876,7 +2982,7 @@ on init
 			if ($current_mapping_preset > $NUM_FACTORY_PRESETS - 1)
 				$current_mapping_preset := $NUM_FACTORY_PRESETS - 1
 			end if
-			set_menu_item_visibility(%mapping_id[0], 11, 0)
+			set_menu_item_visibility(%mapping_id[0], $NUM_FACTORY_PRESETS, 0)
 		end if
 		
 		while ($count_1 < $MAX_NUM_USER_PRESETS)
@@ -3005,8 +3111,8 @@ on init
 					case $PERC1_ID to $PERC5_ID
 						set_key_color($count_1, $KEY_COLOR_ORANGE)
 				end select
-				$instruments := %note_instruments[%current_mapping_data[$count_1]]
-				set_key_name($count_1, !inst_visual_names[$instruments] & " " & !artic_visual_name[%FACTORY_MAPPING_DATA[$current_mapping_preset * 128 + $count_1]])
+				$temp_1 := %note_instruments[%current_mapping_data[$count_1]]
+				set_key_name($count_1, !inst_visual_names[$temp_1] & " " & !artic_visual_name[%current_mapping_data[$count_1]])
 			else
 				set_key_color($count_1, $KEY_COLOR_INACTIVE)
 				set_key_name($count_1, "")
@@ -3346,8 +3452,8 @@ function recall_data
 				case $PERC1_ID to $PERC5_ID
 					set_key_color($count_1, $KEY_COLOR_ORANGE)
 			end select
-			$instruments := %note_instruments[%current_mapping_data[$count_1]]
-			set_key_name($count_1, !inst_visual_names[$instruments] & " " & !artic_visual_name[%FACTORY_MAPPING_DATA[$current_mapping_preset * 128 + $count_1]])
+			$temp_1 := %note_instruments[%current_mapping_data[$count_1]]
+			set_key_name($count_1, !inst_visual_names[$temp_1] & " " & !artic_visual_name[%current_mapping_data[$count_1]])
 		else
 			set_key_color($count_1, $KEY_COLOR_INACTIVE)
 			set_key_name($count_1, "")
@@ -3747,8 +3853,8 @@ on ui_control ($confirm_change)
 				case $PERC1_ID to $PERC5_ID
 					set_key_color($count_1, $KEY_COLOR_ORANGE)
 			end select
-			$instruments := %note_instruments[%current_mapping_data[$count_1]]
-			set_key_name($count_1, !inst_visual_names[$instruments] & " " & !artic_visual_name[%FACTORY_MAPPING_DATA[$current_mapping_preset * 128 + $count_1]])
+			$temp_1 := %note_instruments[%current_mapping_data[$count_1]]
+			set_key_name($count_1, !inst_visual_names[$temp_1] & " " & !artic_visual_name[%current_mapping_data[$count_1]])
 		else
 			set_key_color($count_1, $KEY_COLOR_INACTIVE)
 			set_key_name($count_1, "")
