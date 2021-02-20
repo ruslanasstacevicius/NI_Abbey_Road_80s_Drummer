@@ -313,7 +313,7 @@ on init
 	17,...
 	18,...
 	19,...
-	19,...
+	20,...
 	20)
 	
 	declare %oh_purge_groups[23*4]
@@ -327,14 +327,14 @@ on init
 	{6 - Tom 2}			%oh_purge_groups[6] := 26
 	{7 - Tom 3}			%oh_purge_groups[7] := 27
 	{8 - Tom 4}			%oh_purge_groups[8] := 28
-	{9 - Tom 5}			%oh_purge_groups[9] := 28
+	{9 - Tom 5}			%oh_purge_groups[9] := 29
 	{10 - Cymb 1}		%oh_purge_groups[10] := 29
 	{11 - Cymb 2}		%oh_purge_groups[11] := 30
 	{12 - Cymb 3}		%oh_purge_groups[12] := 31
 	{13 - Cymb 4}		%oh_purge_groups[13] := 32
 	{14 - Cymb 5}		%oh_purge_groups[14] := 33
-	{15 - Cymb 6}		%oh_purge_groups[15] := 33
-	{16 - Cymb 7}		%oh_purge_groups[16] := 33
+	{15 - Cymb 6}		%oh_purge_groups[15] := 34
+	{16 - Cymb 7}		%oh_purge_groups[16] := 34
 	{17 - Perc 1}		%oh_purge_groups[17] := 34
 	{18 - Perc 2}		%oh_purge_groups[18] := 35
 	{19 - Perc 3}		%oh_purge_groups[19] := 36
@@ -6646,7 +6646,11 @@ on ui_control($purge_white)
 								end while
 							end if
 						end if
-						inc($count3)
+                        if(%instrument_id_remap[$count3 - ($purge_pointer * 23)] = 1)
+                            $count3 := $count3 + 3 - $active_snare
+                        else
+                            inc($count3)
+                        end if
 						wait($LOAD_WAIT)
 					end while
 				else
@@ -6782,7 +6786,11 @@ on ui_control($purge_red)
 								end while
 							end if
 						end if
-						inc($count3)
+                        if(%instrument_id_remap[$count3 - ($purge_pointer * 23)] = 1)
+                            $count3 := $count3 + 3 - $active_snare
+                        else
+                            inc($count3)
+                        end if
 						wait($LOAD_WAIT)
 					end while
 				else
