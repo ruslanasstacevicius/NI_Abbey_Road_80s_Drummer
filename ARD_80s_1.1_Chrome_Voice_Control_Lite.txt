@@ -1047,9 +1047,9 @@ on note
 	if ($actual_inst = $SNARE_ID and pgs_get_key_val(ACTIVE_SNARE, 0) # 0)
 	    select (pgs_get_key_val(ACTIVE_SNARE, 0))
 	        case 1
-	            $cur_note := 128 + $EVENT_NOTE
+	            $cur_note := 128 - 4 + $EVENT_NOTE
 	        case 2
-	            $cur_note := 143 + $EVENT_NOTE
+	            $cur_note := 128 + 15 - 4 + $EVENT_NOTE
 	    end select
 	else
 	    $cur_note := $EVENT_NOTE
